@@ -24,7 +24,7 @@ async function searchMovies(movieName) {
     movieInput.value = ""
 
     try {
-        let response = await fetch(`http://www.omdbapi.com/?apikey=9f64864c&s=${movieName}`);
+        let response = await fetch(`https://www.omdbapi.com/?apikey=9f64864c&s=${movieName}`);
         let data = await response.json();
 
         console.log(data);
